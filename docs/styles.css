@@ -567,6 +567,7 @@ footer {
 
     .logo{
         font-size: var(--base);
+        font-family: var(--logo-type);
     }
 
     .Profile i {
