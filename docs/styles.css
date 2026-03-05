@@ -50,7 +50,6 @@ body{
 	box-sizing: border-box;
     font-family: var(--font-type);
     color: var(--secondary-text-clr);
-    background-color: var(--background-clr);
 }
 
 @media (max-width: 768px) {
