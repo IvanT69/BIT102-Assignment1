@@ -150,6 +150,7 @@ body{
 
 .btn:hover{
 	background-color: var(--hover-clr);
+    color: var(--text-clr);
 }
 
 p{
@@ -185,6 +186,36 @@ p{
 	.form-container{
 	width: 90%;
 	max-width: 100%;
+}
+}
+
+@media (max-width: 468px) {
+	.form-container{
+	width: 100%;
+	max-width: 100%;
+}
+    .social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin: 20px 0;
+    font-size: 40px;
+}
+
+.forget-link{ 
+    text-align: right;
+    justify-content: flex-end;
+
+}
+
+.have-account-link {
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+}
+
+.btn{
+	color: var(--background-clr);
 }
 }
 
@@ -479,7 +510,6 @@ footer {
 
     #nav-bar.collapsed{
         width: 60px;
-        border-radius: 10px;
     }
 
     #nav-bar.collapsed span {
@@ -518,6 +548,45 @@ footer {
         margin-left: 50px;
     }
 }
+
+@media (max-width: 468px) {
+    .HomePage, .profile-container {
+        padding: 0 15px 0 20px;
+        min-height: 100vh;
+
+    }
+
+    .logo{
+        font-size: var(--base);
+    }
+
+    .Profile i {
+    background: transparent;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+    .menu-btn {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    footer {
+    p {
+        margin-left: 60px;
+        margin-top: 0;
+        color: var(--background-clr);
+    }
+}
+}
+
+
 
 
 /*Profile Page*/
@@ -611,9 +680,7 @@ footer {
     p{
     position: relative;
 }
-
 }
-
 
 .profile-head{
     margin-bottom: 25px;
@@ -622,6 +689,13 @@ footer {
     font-family: var(--font-type);
 }
 }
+
+@media (max-width: 468px) {
+    .follower-container{
+    gap: 15px;
+}
+}
+
 /*Forum Page*/
 .forum-search {
     display: flex;
