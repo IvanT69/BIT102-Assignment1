@@ -72,6 +72,10 @@ body{
     font-family: var(--font-type);
 }
 
+.LoginPage .form-container .register-heading{
+    font-family: var(--font-type);
+}
+
 .form-container{
     display: flex;
     align-items: center;
