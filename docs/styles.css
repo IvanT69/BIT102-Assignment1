@@ -67,7 +67,7 @@ body{
 	padding: 0 20px;
 }
 
-.login-heading{
+.LoginPage .form-container .login-heading{
     font-family: var(--font-type);
 }
 
