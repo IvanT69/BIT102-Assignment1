@@ -67,6 +67,10 @@ body{
 	padding: 0 20px;
 }
 
+.login-heading{
+    font-family: var(--font-type);
+}
+
 .form-container{
     display: flex;
     align-items: center;
