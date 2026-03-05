@@ -300,6 +300,9 @@ header {
     h2{
     text-align: center;
     padding: 12px;
+    margin: 12px;
+    border-top: 1px solid var(--border-clr);
+    border-bottom: 1px solid var(--border-clr);
     }
 
     .card h3{
@@ -312,7 +315,9 @@ header {
     justify-content: center;
 }
 
-
+.HomePage p{
+    text-align: left;
+}
 
 .discussions{
     border-top: 1px solid var(--border-clr);
@@ -326,6 +331,7 @@ footer {
     text-align: center;
     padding: 1rem 0;
     box-shadow: 0 -2px 5px rgba(0,0,0,0.1);
+    margin-top: 12px;
 
     p {
     margin-top: 0;
@@ -406,7 +412,7 @@ footer {
     flex-direction: column;
     background: var(--background-clr);
     box-shadow: 0 10px 10px rgba(0,0,0,0.1);
-    position: absolute;
+    position: static;
     top: 100%;
     left: 0;
     width: 100%;

@@ -34,11 +34,17 @@
 				<i class="fa-solid fa-bars"></i>
 			</button>
 		</li>
-		<li class="active">
-			<a href="index.html" title="Home">
+		<li class="dropdown">
+			<a href="index.html" class="dropdown-toggle" title="Home">
 				<i class="fa-regular fa-house"></i>
 				<span>Home</span>
+				<i class="fa-solid fa-angle-down dropdown-icon"></i>
 			</a>
+			<ul class="sub-menu">
+        		<li><a href="#about-us">About Us</a></li>
+        		<li><a href="#trending-discussions">Trending Discussions</a></li>
+        		<li><a href="#featured-guides">Featured Guides</a></li>
+    		</ul>
 		</li>
 		<li>
 			<a href="Forum.html" title="Forum">
@@ -70,29 +76,89 @@
     </header>
 	<!--Sidebar-->
 	<div class="HomePage">
-        <h1>Discover Smart Food Choices</h1>
-        <h2>Join the Taste Tribe community and explore affordable and healthy meals for-everyday life.</h2>
-        <a href="SignUp.html" class="btn-primary">Join Now</a>
-    
+        <h1>Discover Food Choices Together</h1>
+        <p>Welcome to Taste Tribe, 
+			a vibrant community for food lovers who enjoy exploring new restaurants, 
+			sharing honest reviews, and discovering hidden food gems. 
+			Whether you’re searching for the best ramen in town or looking for affordable student meals, 
+			Taste Tribe connects you with people who share the same passion for food.</p>
+        
+    <!--About Us-->
+	<section class="about-us" id="about-us"></section>
+		<h2>About the Community</h2>
+		<h3>About Taste Tribe</h3>
+		<p>Taste Tribe was created to bring together people who love food and enjoy sharing their experiences with others. 
+	   		Food is more than just a necessity; it is part of culture, lifestyle, and social connection. 
+	   		Through Taste Tribe, members can discuss their favorite dishes, recommend restaurants, and discover new cuisines.
+	   		The community welcomes students, travelers, and local food enthusiasts who want to explore food in an engaging and friendly environment.</p>
+	</section>
+
 	<!-- FEATURED SECTION -->
-<section class="featured">
-    <h2 class="discussions">Popular Discussions</h2>
-    <div class="card-container">
-        <div class="card">
-            <h3>Best Meals Under $10?</h3>
-            <p>Share your favorite affordable spots around campus.</p>
-        </div>
+ <section class="trending-discussions" id="trending-discussions">
+  <h2>Trending Discussions</h2>
+  <h3>Popular Topics in the Community</h3>
 
-        <div class="card">
-            <h3>Healthy Late Night Snacks</h3>
-            <p>What keeps you energized during study sessions?</p>
-        </div>
+  <div class="discussion-item">
+    <h4>Best ramen places in Penang?</h4>
+    <p>Members are sharing their favorite ramen spots and comparing broth quality, noodle texture, and prices.</p>
+  </div>
 
-        <div class="card">
-            <h3>Halal & Vegan Options</h3>
-            <p>Help others find inclusive food options.</p>
-        </div>
-    </div>
+  <div class="discussion-item">
+    <h4>Affordable student meals under RM10</h4>
+    <p>Students recommend budget-friendly food stalls and restaurants that offer good value meals.</p>
+  </div>
+
+  <div class="discussion-item">
+    <h4>Best dessert cafés for late-night hangouts</h4>
+    <p>Community members suggest cozy dessert cafés that stay open late.</p>
+  </div>
+
+  <div class="discussion-item">
+    <h4>Hidden street food gems</h4>
+    <p>Members discuss underrated street food stalls that tourists might not know about.</p>
+  </div>
+</section>
+
+<!-- Featured Food Guides Section -->
+<section class="featured-guides" id="featured-guides">
+  <h2>Featured Food Guides</h2>
+  <h3>Food Guides from the Community</h3>
+
+  <ul>
+    <li>
+      <strong>Beginner’s Guide to Food Hunting</strong><br>
+      Learn how to explore food spots effectively and discover the best dishes in your city.
+    </li>
+
+    <li>
+      <strong>Top Malaysian Street Foods You Must Try</strong><br>
+      Explore popular street foods such as char kway teow, nasi lemak, and roti canai.
+    </li>
+
+    <li>
+      <strong>How to Spot a Great Restaurant</strong><br>
+      Learn tips on identifying quality food, good service, and authentic cuisine.
+    </li>
+  </ul>
+</section>
+
+<!-- Community Highlights Section -->
+<section class="community-highlights">
+  <h2>Community Highlights</h2>
+
+  <p>
+    Taste Tribe is built on community participation. Members actively contribute by sharing
+    restaurant reviews, posting food photos, and answering questions from other users.
+  </p>
+
+  <h3>Recent Community Activity</h3>
+
+  <ul>
+    <li>New restaurant recommendations</li>
+    <li>Food photography posts</li>
+    <li>Discussions about trending food spots</li>
+    <li>Reviews of newly opened cafés</li>
+  </ul>
 </section>
 </div>
 <footer>
