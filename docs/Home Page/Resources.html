@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>HomePage</title>
+    <link rel="stylesheet" href="../Login Page/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+</head>
+<body>
+<header>
+	<div class="header-top">
+    <h1>Resources</h1>
+	<!--Profile-->
+		<div class="Profile">
+        	<a href="Profile.html" class="profile-link" title="Profile">
+            	<i class="fa-regular fa-user"></i>
+        	</a>
+    	</div>
+	</div>
+	<!--Navigation Bar-->
+	<nav id="nav-bar" class="collapsed">
+	<ul>
+		<li class="menu-btn">
+			<span class="menu">Menu</span>
+			<button onclick=toggleSidebar() id="toggle-btn">
+				<i class="fa-solid fa-bars"></i>
+			</button>
+		</li>
+		<li class="active">
+			<a href="index.html" title="Home">
+				<i class="fa-regular fa-house"></i>
+				<span>Home</span>
+			</a>
+		</li>
+		<li>
+			<a href="Forum.html" title="Forum">
+				<i class="fa-regular fa-comments"></i>
+				<span>Forum</span>
+			</a>
+		</li>
+		<li class="dropdown">
+    		<a href="Resources.html" class="dropdown-toggle" title="Resources">
+        		<i class="fa-solid fa-gears"></i>
+        		<span>Resources</span>
+        		<i class="fa-solid fa-angle-down dropdown-icon"></i>
+    		</a>
+
+    		<ul class="sub-menu">
+        		<li><a href="#">List 1</a></li>
+        		<li><a href="#">List 2</a></li>
+        		<li><a href="#">List 3</a></li>
+    		</ul>
+		</li>
+	</ul>
+	</nav>
+    </header>
+	<!--Sidebar-->
+	<div class="HomePage">
+	<main>
+		<h2 class="page-title">Student Resources</h2>
+
+<div class="tabs">
+    <button class="tab-btn active" onclick="openTab('healthy')">Healthy Tips</button>
+    <button class="tab-btn" onclick="openTab('budget')">Budget Tips</button>
+    <button class="tab-btn" onclick="openTab('map')">Campus Map</button>
+</div>
+
+<div id="healthy" class="tab-content active">
+    <h3>Healthy Eating Guide</h3>
+    <p>Eat balanced meals with vegetables, protein, and whole grains.</p>
+</div>
+
+<div id="budget" class="tab-content">
+    <h3>Budget Meal Planning</h3>
+    <p>Plan weekly meals to avoid overspending.</p>
+</div>
+
+<div id="map" class="tab-content">
+    <h3>Campus Food Locations</h3>
+    <p>Explore affordable food spots around campus.</p>
+</div>
+	</main>
+	</div>
+<script src="script.js"></script>
+</body>
+</html>

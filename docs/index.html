@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Taste Tribe</title>
+    <link rel="stylesheet" href="../Login Page/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Satisfy&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Satisfy&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+</head>
+<body>
+    <header>
+	<div class="header-top">
+    	<h1 class="logo">
+		Taste Tribe
+		<i class="fa-solid fa-seedling"></i>
+		</h1>
+	<!--Profile-->
+		<div class="Profile">
+        	<a href="Profile.html" class="profile-link" title="Profile">
+            	<i class="fa-regular fa-user"></i>
+        	</a>
+    	</div>
+	</div>
+	<!--Navigation Bar-->
+	<nav id="nav-bar" class="collapsed">
+	<ul>
+		<li class="menu-btn">
+			<span class="menu">Menu</span>
+			<button onclick=toggleSidebar() id="toggle-btn">
+				<i class="fa-solid fa-bars"></i>
+			</button>
+		</li>
+		<li class="active">
+			<a href="../index.html" title="Home">
+				<i class="fa-regular fa-house"></i>
+				<span>Home</span>
+			</a>
+		</li>
+		<li>
+			<a href="../Assignment/Home Page/Forum.html" title="Forum">
+				<i class="fa-regular fa-comments"></i>
+				<span>Forum</span>
+			</a>
+		</li>
+		<li class="dropdown">
+    		<a href="../Assignment/Home Page/Resources.html" class="dropdown-toggle" title="Resources">
+        		<i class="fa-solid fa-gears"></i>
+        		<span>Resources</span>
+        		<i class="fa-solid fa-angle-down dropdown-icon"></i>
+    		</a>
+
+    		<ul class="sub-menu">
+        		<li><a href="#">List 1</a></li>
+        		<li><a href="#">List 2</a></li>
+        		<li><a href="#">List 3</a></li>
+    		</ul>
+		</li>
+		<li class="logout-btn">
+			<a href="../Login Page/Login.html" title="LogIn/LogOut">
+				<i class="fa-solid fa-arrow-right-from-bracket"></i>
+				<span>Log Out</span>
+			</a>
+		</li>
+	</ul>
+	</nav>
+    </header>
+	<!--Sidebar-->
+	<div class="HomePage">
+        <h1>Discover Smart Food Choices</h1>
+        <h2>Join the Taste Tribe community and explore affordable and healthy meals for-everyday life.</h2>
+        <a href="SignUp.html" class="btn-primary">Join Now</a>
+    
+	<!-- FEATURED SECTION -->
+<section class="featured">
+    <h2 class="discussions">Popular Discussions</h2>
+    <div class="card-container">
+        <div class="card">
+            <h3>Best Meals Under $10?</h3>
+            <p>Share your favorite affordable spots around campus.</p>
+        </div>
+
+        <div class="card">
+            <h3>Healthy Late Night Snacks</h3>
+            <p>What keeps you energized during study sessions?</p>
+        </div>
+
+        <div class="card">
+            <h3>Halal & Vegan Options</h3>
+            <p>Help others find inclusive food options.</p>
+        </div>
+    </div>
+</section>
+</div>
+<footer>
+    <p>© 2026 Taste Tribe | All Rights Reserved</p>
+</footer>
+	</div>
+<script src="../Assignment/Home Page/script.js"></script>
+</body>
+</html>
