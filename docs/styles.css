@@ -221,6 +221,9 @@ header {
     text-align: center;
 }
 
+.header-top .top{
+    font-family: var(--font-type);
+}
 
 .header .logo {
     position: absolute;
@@ -611,6 +614,7 @@ footer {
     margin-bottom: 25px;
     margin-top: 25px;
     margin-left: 60px;
+    font-family: var(--font-type);
 }
 }
 /*Forum Page*/
