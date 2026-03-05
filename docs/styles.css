@@ -147,6 +147,8 @@ body{
     border-color: var(--border-clr);
 	border-radius: 10px;
 	cursor: pointer;
+    background-color: var(--background-clr);
+    color: var(--text-clr);
 }
 
 .btn:hover{
@@ -213,10 +215,6 @@ p{
     display: flex;
     justify-content: center;
     gap: 5px;
-}
-
-.btn{
-	color: var(--background-clr);
 }
 }
 
