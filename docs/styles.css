@@ -757,6 +757,32 @@ footer {
     color: var(--background-clr);  
 }
 
+.forum-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+}
+
+.forum-card {
+    background: var(--background-clr);
+    padding: 15px;
+    border: 1px solid var(--border-clr);
+    border-radius: 10px;
+    width: 300px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    width: 300px;
+    height: 180px;  
+    display: flex;               
+    flex-direction: column;     
+}
+
+.forum-card span{
+    font-size: 1rem;
+    margin-top: auto;
+}
+
 /*Resource Page*/
 .tabs {
     margin-bottom: 20px;
