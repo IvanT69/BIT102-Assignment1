@@ -55,6 +55,7 @@ body{
 @media (max-width: 768px) {
     .login-heading, .register-heading{
         margin: 25px 0;
+        font-family: var(--font-type);
     }
 }
 
