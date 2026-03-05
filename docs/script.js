@@ -56,6 +56,27 @@ dropdowns.forEach(dropdown => {
     });
 });
 
+// CLICK OUTSIDE TO CLOSE DROPDOWNS / SIDEBAR
+document.addEventListener("click", (e) => {
+    const nav = document.getElementById("nav-bar");
+    const clickedInsideNav = nav.contains(e.target);
+
+    if (!clickedInsideNav) {
+
+        // Close all dropdowns
+        document.querySelectorAll(".dropdown").forEach(dropdown => {
+            dropdown.classList.remove("open");
+            const submenu = dropdown.querySelector(".sub-menu");
+            if (submenu) submenu.classList.remove("show");
+        });
+
+        // Collapse sidebar on mobile
+        if (window.innerWidth <= 768) {
+            nav.classList.add("collapsed");
+        }
+    }
+});
+
 // SIDEBAR TOGGLE
 function toggleSidebar() {
     const nav = document.getElementById("nav-bar");

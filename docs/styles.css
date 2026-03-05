@@ -412,7 +412,7 @@ footer {
     flex-direction: column;
     background: var(--background-clr);
     box-shadow: 0 10px 10px rgba(0,0,0,0.1);
-    position: static;
+    position: absolute;
     top: 100%;
     left: 0;
     width: 100%;
@@ -463,6 +463,10 @@ footer {
         border-bottom: none;
         overflow: hidden;
         transition: width 0.3s ease;
+    }
+
+    #nav-bar .dropdown .sub-menu {
+        position: static;
     }
 
     .menu-btn {
