@@ -32,11 +32,11 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 document.getElementById("loginBtn").addEventListener("click", function() {
-    window.location.href = "../Home Page/index.html";
+    window.location.href = "index.html";
 });
 
 document.getElementById("registerBtn").addEventListener("click", function() {
-    window.location.href = "../Home Page/index.html";
+    window.location.href = "index.html";
 });
 
 document.querySelectorAll(".social-link").forEach(link => {

@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>HomePage</title>
-    <link rel="stylesheet" href="../Login Page/styles.css">
+    <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
@@ -11,13 +11,16 @@
 </head>
 <body>
 <header>
+	<div class="header-top">
+    <h1>Forum</h1>
 	<!--Profile-->
-	<div class="Profile-back">
-        <button class="back-btn">
-        <i onclick="history.back()" class="fa-solid fa-arrow-left"></i>
-    </button>
-    </div>
-    <h1 class="profile-head">Profile</h1>
+		<div class="Profile">
+        	<a href="Profile.html" class="profile-link" title="Profile">
+            	<i class="fa-regular fa-user"></i>
+        	</a>
+    	</div>
+	</div>
+	</div>
 	<!--Navigation Bar-->
 	<nav id="nav-bar" class="collapsed">
 	<ul>
@@ -53,52 +56,40 @@
     		</ul>
 		</li>
 	</ul>
-    </nav>
-</header>
+	</nav>
+    </header>
+	<!--Sidebar-->
+	<div class="HomePage">
+	<main>
+<!-- Search Bar -->
+<div class="forum-search">
+    <input type="text" id="searchInput" placeholder="Search discussions...">
+</div>
 
-<main class="profile-container">
+<!-- Forum Threads -->
+<div class="forum-container" id="forumList">
 
-    <!-- Profile Icon -->
-    <div class="profile-head">
-        <i class="fa-regular fa-user profile-icon"></i>
+    <div class="forum-card">
+        <h3>Best meals under $10?</h3>
+        <p>Category: Budget Eats</p>
+        <span>12 Replies</span>
     </div>
 
-    <!-- Username -->
-    <p class="username">JohnDoe123</p>
-
-    <!-- Bio -->
-    <p class="bio">Student foodie 🌱 | Loves budget eats & healthy meals</p>
-
-    <!-- Followers Section -->
-    <ul class="follower-container">
-        <li><strong>15</strong> Posts</li>
-        <li><strong>120</strong> Followers</li>
-        <li><strong>80</strong> Following</li>
-    </ul>
-
-    <!-- Tabs -->
-    <div class="profile-tabs">
-        <button class="tab-btn active" onclick="openProfileTab('posts')">Posts</button>
-        <button class="tab-btn" onclick="openProfileTab('saved')">Saved</button>
-        <button class="tab-btn" onclick="openProfileTab('settings')">Settings</button>
+    <div class="forum-card">
+        <h3>Healthy snacks for exam week</h3>
+        <p>Category: Healthy Tips</p>
+        <span>8 Replies</span>
     </div>
 
-    <!-- Tab Content -->
-    <div id="posts" class="profile-content active">
-        <p>• Best meals under $10 near campus</p>
-        <p>• Healthy snacks during exams</p>
+    <div class="forum-card">
+        <h3>Halal restaurants near campus?</h3>
+        <p>Category: Recommendations</p>
+        <span>5 Replies</span>
     </div>
 
-    <div id="saved" class="profile-content">
-        <p>No saved posts yet.</p>
-    </div>
-
-    <div id="settings" class="profile-content">
-        <p>Edit profile coming soon.</p>
-    </div>
-
-</main>
-
+</div>
+	</main>
+	</div>
 <script src="script.js"></script>
 </body>
 </html>

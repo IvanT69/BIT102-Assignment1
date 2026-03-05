@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>HomePage</title>
-    <link rel="stylesheet" href="../Login Page/styles.css">
+    <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
@@ -12,14 +12,13 @@
 <body>
 <header>
 	<div class="header-top">
-    <h1>Forum</h1>
+    <h1>Resources</h1>
 	<!--Profile-->
 		<div class="Profile">
         	<a href="Profile.html" class="profile-link" title="Profile">
             	<i class="fa-regular fa-user"></i>
         	</a>
     	</div>
-	</div>
 	</div>
 	<!--Navigation Bar-->
 	<nav id="nav-bar" class="collapsed">
@@ -61,32 +60,27 @@
 	<!--Sidebar-->
 	<div class="HomePage">
 	<main>
-<!-- Search Bar -->
-<div class="forum-search">
-    <input type="text" id="searchInput" placeholder="Search discussions...">
+		<h2 class="page-title">Student Resources</h2>
+
+<div class="tabs">
+    <button class="tab-btn active" onclick="openTab('healthy')">Healthy Tips</button>
+    <button class="tab-btn" onclick="openTab('budget')">Budget Tips</button>
+    <button class="tab-btn" onclick="openTab('map')">Campus Map</button>
 </div>
 
-<!-- Forum Threads -->
-<div class="forum-container" id="forumList">
+<div id="healthy" class="tab-content active">
+    <h3>Healthy Eating Guide</h3>
+    <p>Eat balanced meals with vegetables, protein, and whole grains.</p>
+</div>
 
-    <div class="forum-card">
-        <h3>Best meals under $10?</h3>
-        <p>Category: Budget Eats</p>
-        <span>12 Replies</span>
-    </div>
+<div id="budget" class="tab-content">
+    <h3>Budget Meal Planning</h3>
+    <p>Plan weekly meals to avoid overspending.</p>
+</div>
 
-    <div class="forum-card">
-        <h3>Healthy snacks for exam week</h3>
-        <p>Category: Healthy Tips</p>
-        <span>8 Replies</span>
-    </div>
-
-    <div class="forum-card">
-        <h3>Halal restaurants near campus?</h3>
-        <p>Category: Recommendations</p>
-        <span>5 Replies</span>
-    </div>
-
+<div id="map" class="tab-content">
+    <h3>Campus Food Locations</h3>
+    <p>Explore affordable food spots around campus.</p>
 </div>
 	</main>
 	</div>
