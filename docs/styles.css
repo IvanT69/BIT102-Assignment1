@@ -576,12 +576,10 @@ footer {
         align-items: center;
     }
 
-    footer {
-    p {
+    footer p{
         margin-left: 60px;
         margin-top: 0;
         color: var(--background-clr);
-    }
 }
 }
 
