@@ -628,6 +628,7 @@ footer {
     border: 1px solid var(--border-clr);
     border-radius: 10px;
     margin: 50px auto;
+    align-items: center;
 
     .profile-head{
     height: 90px;
@@ -648,7 +649,7 @@ footer {
     justify-content: center;
 }
 
-.follower-container{
+.profile-container .follower-container{
     padding: 10px;
     display: flex;
     flex-direction: row;
@@ -658,6 +659,13 @@ footer {
     list-style-type: none;
     justify-content: center;
     align-items: center;
+}
+
+.profile-container .profile-tabs{
+    min-width: 150px;
+    display: flex;
+    gap: 24px;
+    margin: 10px;
 }
 
 @media (max-width: 768px) {
@@ -685,11 +693,34 @@ footer {
     margin-left: 60px;
     font-family: var(--font-type);
 }
+
+.profile-tabs .tab-btn {
+    width: 120px;
+}
+.profile-container .profile-tabs {
+    min-width: 150px;
+    display: flex;
+    gap: 20px;
+}
+
 }
 
 @media (max-width: 468px) {
-    .follower-container{
+.profile-container .follower-container{
     gap: 15px;
+}
+.profile-container .profile-tabs{
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    min-width: 0;
+}
+
+.profile-container .tab-btn {
+    display: flex;
+    width: 80px;
+    justify-content: center;
+    padding: 12px 120px
 }
 }
 
@@ -726,6 +757,7 @@ footer {
     border: none;
     background-color: #66BB6A;
     cursor: pointer;
+    width: 200px;
 }
 
 .tab-btn.active {
