@@ -47,6 +47,7 @@ p{
 
 body{
     background-color: var(--background-clr);
+    overflow-x: hidden ;
 }
 
 *{
@@ -605,10 +606,6 @@ header .logout-btn1{
         max-width: calc(100% - 60px);
         margin-left: 60px;
         box-sizing: border-box;
-    }
-
-    body{
-        overflow-x: hidden;
     }
 
     #nav-bar i, span {
