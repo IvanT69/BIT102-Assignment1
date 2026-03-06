@@ -1,11 +1,13 @@
 @charset "utf-8";
 /* --- Main Layout Styles --- */
 :root{
-	--background-clr: #1B211A;
-	--border-clr: #C6CFC4;
+    --header-clr: #1F2E1C;
+	--background-clr: #263B23;
+	--border-clr: #9FA99C;
 	--hover-clr: #364724;
 	--text-clr: #fff9ef;
 	--secondary-text-clr: #fff9ef;
+    --btn-clr: #3F5A2F;
 	--font-type: "Montserrat", sans-serif;
     --logo-type: "Satisfy", cursive;
     --ratio: 1.61;
@@ -25,10 +27,12 @@ h1 {
 
 .logo{
     font-size: calc(var(--base)*1.61);
+    color: #CFAF6B;;
 }
 
 .logo i, .logo i:hover{
     background: transparent;
+    color: #CFAF6B;
 }
 
 
@@ -86,6 +90,7 @@ body{
     border: 3px solid var(--border-clr);
     border-radius: 50px;
     padding: 20px; 
+    background-color: var(--header-clr)
 }
 
 .form-box-login,
@@ -147,7 +152,7 @@ body{
     border-color: var(--border-clr);
 	border-radius: 10px;
 	cursor: pointer;
-    background-color: var(--background-clr);
+    background-color: var(--btn-clr);
     color: var(--text-clr);
 }
 
@@ -238,7 +243,7 @@ header {
     width: 100%;
     z-index: 1000;
     border-bottom: 1px solid var(--border-clr);
-    background: var(--background-clr);
+    background-color: var(--header-clr);
     display: flex;
     flex-direction: column;
 }
@@ -343,7 +348,7 @@ footer {
 
 #nav-bar {
     width: 100%;
-    background: var(--background-clr);
+    background: var(--header-clr);
     border-top: 1px solid var(--border-clr);
     border-bottom: 1px solid var(--border-clr);
     z-index: 1001;
@@ -416,7 +421,7 @@ header .logout-btn1{
 #nav-bar .dropdown .sub-menu {
     display: none;
     flex-direction: column;
-    background: var(--background-clr);
+    background: var(--header-clr);
     box-shadow: 0 10px 10px rgba(0,0,0,0.1);
     position: absolute;
     top: 100%;
@@ -463,7 +468,7 @@ header .logout-btn1{
         inset: 0 auto 0 0;
         width: 220px;
         height: 100vh;
-        background: var(--background-clr);
+        background: var(--header-clr);
         border-right: 1px solid var(--border-clr);
         border-top: none;
         border-bottom: none;
