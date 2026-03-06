@@ -586,8 +586,21 @@ header .logout-btn1 span{
 }
 
 header .logout-btn1 i{
-        font-size: 20px;
+    display: none;
 }
+
+header {
+    margin-left: 60px;
+    position: sticky;
+    display: flex;
+    flex-direction: column;
+}
+
+.header-top {
+    width: 90%;
+    padding: 25px 0px;
+}
+
 
 }
 
@@ -612,7 +625,7 @@ header .logout-btn1 i{
     align-items: center;
     justify-content: center;
     cursor: pointer;
-}
+    }
     .menu-btn {
         display: flex;
         justify-content: space-between;
@@ -623,10 +636,18 @@ header .logout-btn1 i{
         margin-left: 60px;
         margin-top: 0;
         color: var(--background-clr);
-}
+    }
     header .logout-btn1 i{
         font-size: 20px;
-}
+    }
+
+    .header-top {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        padding: 25px 20px;
+    }
 }
 
 
