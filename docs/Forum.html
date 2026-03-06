@@ -44,6 +44,7 @@
         		<li><a href="index.html#about-us">About Us</a></li>
         		<li><a href="index.html#trending-discussions">Trending Discussions</a></li>
         		<li><a href="index.html#featured-guides">Featured Guides</a></li>
+				<li><a href="index.html#comm-highlights">Community Highlights</a></li>
     		</ul>
 		</li>
 		<li>
@@ -88,6 +89,18 @@
     	<input type="text" id="searchInput" placeholder="Search discussions...">
 	</div>
 
+<!--Category Filter-->
+	<div class="forum-filter">
+    <label for="categoryFilter">Filter by Category:</label>
+    <select id="categoryFilter">
+        <option value="all">All Categories</option>
+        <option value="General Discussion">General Discussion</option>
+        <option value="Restaurant Reviews">Restaurant Reviews</option>
+        <option value="Food Recommendations">Food Recommendations</option>
+        <option value="Food Experiences">Food Experiences</option>
+    </select>
+</div>
+
 <!-- Forum Threads -->
 <div class="forum-container" id="forumList">
     <!-- General Food Discussion -->
@@ -97,64 +110,64 @@
         <span>15 Replies</span>
     </div>
 
-    <div class="forum-card">
+    <div class="forum-card" data-category="General Discussion">
         <h3>What dish do you always recommend to friends?</h3>
         <p>Category: General Discussion</p>
         <span>10 Replies</span>
     </div>
 
-    <div class="forum-card">
+    <div class="forum-card" data-category="General Discussion">
         <h3>Which cuisine do you enjoy the most?</h3>
         <p>Category: General Discussion</p>
         <span>7 Replies</span>
     </div>
 
     <!-- Restaurant Reviews -->
-    <div class="forum-card">
+    <div class="forum-card" data-category="Restaurant Reviews">
         <h3>Review: Nasi Kandar Line Clear</h3>
         <p>Category: Restaurant Reviews</p>
         <span>12 Replies</span>
     </div>
 
-    <div class="forum-card">
+    <div class="forum-card" data-category="Restaurant Reviews">
         <h3>Review: New ramen shop in town</h3>
         <p>Category: Restaurant Reviews</p>
         <span>9 Replies</span>
     </div>
 
     <!-- Food Recommendations -->
-    <div class="forum-card">
+    <div class="forum-card" data-category="Food Recommendations">
         <h3>Best cafés for studying</h3>
         <p>Category: Food Recommendations</p>
         <span>6 Replies</span>
     </div>
 
-    <div class="forum-card">
+    <div class="forum-card" data-category="Food Recommendations">
         <h3>Cheap eats for university students</h3>
         <p>Category: Food Recommendations</p>
         <span>8 Replies</span>
     </div>
 
-    <div class="forum-card">
+    <div class="forum-card" data-category="Food Recommendations">
         <h3>Where to find the best bubble tea?</h3>
         <p>Category: Food Recommendations</p>
         <span>5 Replies</span>
     </div>
 
     <!-- Food Experiences -->
-    <div class="forum-card">
+    <div class="forum-card" data-category="Food Experiences">
         <h3>Trying street food at a night market</h3>
         <p>Category: Food Experiences</p>
         <span>4 Replies</span>
     </div>
 
-    <div class="forum-card">
+    <div class="forum-card" data-category="Food Experiences">
         <h3>Visiting a famous food festival</h3>
         <p>Category: Food Experiences</p>
         <span>3 Replies</span>
     </div>
 
-    <div class="forum-card">
+    <div class="forum-card" data-category="Food Experiences">
         <h3>Discovering a hidden restaurant</h3>
         <p>Category: Food Experiences</p>
         <span>5 Replies</span>

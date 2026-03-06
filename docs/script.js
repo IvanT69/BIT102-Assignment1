@@ -116,3 +116,25 @@ function openTab(tabName) {
     document.getElementById(tabName).classList.add("active");
     event.target.classList.add("active");
 }
+
+//Category Filter
+document.addEventListener("DOMContentLoaded", function(){
+
+const categoryFilter = document.getElementById("categoryFilter");
+const forumCards = document.querySelectorAll(".forum-card");
+
+categoryFilter.addEventListener("change", function () {
+    const selectedCategory = this.value;
+
+    forumCards.forEach(card => {
+        const cardCategory = card.getAttribute("data-category");
+
+        if (selectedCategory === "all" || cardCategory === selectedCategory) {
+            card.style.display = "block";
+        } else {
+            card.style.display = "none";
+        }
+    });
+});
+
+});

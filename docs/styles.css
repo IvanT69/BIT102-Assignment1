@@ -766,6 +766,17 @@ footer {
     justify-content: center;
 }
 
+.forum-filter{
+    margin: 10px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#categoryFilter, #categoryFilter option{
+    color: black;
+}
+
 .forum-card {
     background: var(--background-clr);
     padding: 15px;
