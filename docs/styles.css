@@ -604,6 +604,7 @@ header .logout-btn1{
     .HomePage {
         max-width: calc(100% - 60px);
         margin-left: 60px;
+        box-sizing: border-box;
     }
 
     body{
@@ -640,6 +641,10 @@ header {
 @media (max-width: 468px) {
     .HomePage, .profile-container {
         min-height: 100vh;
+    }
+
+    body{
+        overflow-x: hidden;
     }
 
     .logo{
