@@ -467,7 +467,6 @@ header .logout-btn1{
     position: fixed;
     inset: 0 auto 0 0;
     width: 220px;
-    height: 100vh;
     background: var(--header-clr);
     border-right: 1px solid var(--border-clr);
     border-top: none;
