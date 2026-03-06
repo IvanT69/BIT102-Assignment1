@@ -562,6 +562,19 @@ header .logout-btn1{
     .HomePage {
         margin-left: 50px;
     }
+
+    #nav-bar i, span {
+    background: transparent;
+}
+
+header .logout-btn1 span{
+    display: none;
+}
+
+header .logout-btn1 i{
+        font-size: 20px;
+}
+
 }
 
 @media (max-width: 468px) {
@@ -597,6 +610,9 @@ header .logout-btn1{
         margin-left: 60px;
         margin-top: 0;
         color: var(--background-clr);
+}
+    header .logout-btn1 i{
+        font-size: 20px;
 }
 }
 
