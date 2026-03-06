@@ -335,6 +335,10 @@ header {
     padding-top: 12px;
 }
 
+.discussion-item p{
+    margin-top: 0px;
+}
+
 .featured-guides ul, .community-highlights ul{
     list-style-type: none; 
 }
@@ -443,6 +447,8 @@ header .logout-btn1{
     z-index: 1002;
 
     opacity: 0;
+    pointer-events: none;
+    pointer-events: auto;
     transform: translateY(-5px);
     transition: 
         max-height 0.35s ease,
