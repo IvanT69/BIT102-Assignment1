@@ -331,6 +331,32 @@ header {
     margin-top: 24px;
 }
 
+.discussion-item h4{
+    padding-top: 12px;
+}
+
+.discussion-item p{
+    margin-top: 0px;
+}
+
+.featured-guides ul, .community-highlights ul{
+    list-style-type: none; 
+}
+
+.featured-guides ul li, .community-highlights ul li{
+    list-style-type: none; 
+    padding-top: 12px;
+}
+
+.community-highlights h3{
+    padding-top: 12px;
+}
+
+.featured-guides ul strong, .community-highlights ul {
+    text-decoration: underline; 
+}
+
+
 footer {
     width: 100%;
     background-color: #fff;
@@ -421,6 +447,7 @@ header .logout-btn1{
     z-index: 1002;
 
     opacity: 0;
+    pointer-events: none;
     transform: translateY(-5px);
     transition: 
         max-height 0.35s ease,
@@ -453,6 +480,7 @@ header .logout-btn1{
 }
 
 
+
 @media (max-width: 768px) {
 
     .HomePage, .profile-container {
@@ -483,7 +511,6 @@ header .logout-btn1{
     transition: max-height 0.35s ease;
 }
 
-/* Open state */
 #nav-bar .dropdown.open .sub-menu,
 #nav-bar .sub-menu.show {
     max-height: 500px;  
@@ -574,12 +601,17 @@ header .logout-btn1{
     }
 
     .HomePage {
+        max-width: calc(100% - 60px);
         margin-left: 60px;
+    }
+
+    body{
+        overflow-x: hidden;
     }
 
     #nav-bar i, span {
     background: transparent;
-}
+    }
 
 header .logout-btn1 span{
     display: none;
@@ -607,7 +639,6 @@ header {
 @media (max-width: 468px) {
     .HomePage, .profile-container {
         min-height: 100vh;
-
     }
 
     .logo{
