@@ -364,7 +364,7 @@ header {
 
 footer {
     width: 100%;
-    background-color: #171717;
+    background-color: var(--footer-clr);
     text-align: center;
     padding: 1rem 0;
     box-shadow: 0 -2px 5px rgba(0,0,0,0.1);
@@ -673,7 +673,7 @@ header {
     footer p{
         margin-left: 60px;
         margin-top: 0;
-        color: var(--background-clr);
+        color: var(--secondary-text-clr);
     }
     header .logout-btn1 i{
         font-size: 20px;
