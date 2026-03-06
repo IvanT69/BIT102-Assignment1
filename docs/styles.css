@@ -451,7 +451,7 @@ header .logout-btn1{
 @media (max-width: 768px) {
 
     .HomePage, .profile-container {
-        padding: 0 15px 0 20px;
+        padding: 0 12px 0 12px;
         min-height: 100vh;
 
     }
@@ -560,7 +560,7 @@ header .logout-btn1{
     }
 
     .HomePage {
-        margin-left: 50px;
+        margin-left: 60px;
     }
 
     #nav-bar i, span {
@@ -579,7 +579,6 @@ header .logout-btn1 i{
 
 @media (max-width: 468px) {
     .HomePage, .profile-container {
-        padding: 0 15px 0 20px;
         min-height: 100vh;
 
     }
