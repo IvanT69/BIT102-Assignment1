@@ -383,6 +383,12 @@ footer {
     display: none;
 }
 
+header .logout-btn1{
+    position: absolute;
+    right: 20px;
+    list-style-type: none;
+}
+
 #toggle-btn {
     display: none;
 }
@@ -601,7 +607,7 @@ footer {
 .Profile-back {
     position: absolute;
     left: 20px;
-    top: 28px;  
+    z-index: 1001;
 
     .back-btn {
         border: none;
