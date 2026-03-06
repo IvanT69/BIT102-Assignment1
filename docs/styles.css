@@ -8,7 +8,8 @@
 	--hover-clr: #333333;
 	--text-clr: #fff9ef;
 	--secondary-text-clr: #fff9ef;
-    --btn-clr: #3F5A2F;
+    --btn-clr: #3B5A46;
+    --btn-clr-hover: #4A6A52;
     --card-clr:#28352c;
 	--font-type: "Montserrat", sans-serif;
     --logo-type: "Satisfy", cursive;
@@ -95,7 +96,7 @@ body{
     border: 3px solid var(--border-clr);
     border-radius: 50px;
     padding: 20px; 
-    background-color: var(--header-clr)
+    background-color: var(--card-clr)
 }
 
 .form-box-login,
@@ -162,7 +163,7 @@ body{
 }
 
 .btn:hover{
-	background-color: var(--hover-clr);
+	background-color: var(--btn-clr-hover);
     color: var(--text-clr);
 }
 
@@ -730,6 +731,7 @@ header {
 .profile-container { 
     width: 80%;
     border: 1px solid var(--border-clr);
+    background-color: var(--card-clr);
     border-radius: 10px;
     margin: 50px auto;
     align-items: center;
@@ -835,7 +837,6 @@ header {
     margin: 20px;
 }
 
-/* Style the input */
 .forum-search #searchInput {
     padding: 12px 20px;    
     border-radius: 12px;
@@ -845,7 +846,6 @@ header {
     box-sizing: border-box; 
 }
 
-/* Optional: placeholder styling (also left-aligned) */
 .forum-search #searchInput::placeholder {
     text-align: left;
     color: var(--background-clr);  
@@ -896,12 +896,12 @@ header {
 .tab-btn {
     padding: 10px 15px;
     border: none;
-    background-color: #58824F;
+    background-color: var(--btn-clr);
     cursor: pointer;
     width: 200px;
 }
 .tab-btn:hover{
-    background-color: #31492D;
+    background-color: var(--btn-clr-hover);
 
 }
 
