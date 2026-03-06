@@ -696,7 +696,6 @@ header .logout-btn1{
     max-width: 100%;
     width: calc(100% - 100px);
     margin: 40px auto;
-    margin-left: 80px;
     box-sizing: border-box;
 
     p{
@@ -724,6 +723,8 @@ header .logout-btn1{
 
 @media (max-width: 468px) {
 .profile-container .follower-container{
+    display: flex;
+    flex-wrap: wrap;
     gap: 15px;
 }
 .profile-container .profile-tabs{
