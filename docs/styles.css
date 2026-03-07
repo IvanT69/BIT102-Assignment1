@@ -344,7 +344,8 @@ header {
     margin-top: 0px;
 }
 
-.featured-guides ul, .community-highlights ul{
+.HomePage .featured-guides ul, .HomePage .community-highlights ul{
+    margin-left: 0px;
     list-style-type: none; 
 }
 
