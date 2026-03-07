@@ -763,6 +763,10 @@ footer p{
     justify-content: center;
 }
 
+.profile-container .bio{
+    text-align: center;
+}
+
 .profile-container .follower-container{
     padding: 10px;
     display: flex;
