@@ -372,6 +372,7 @@ footer {
     margin-top: 12px;
 
     p {
+    align-items: center;
     margin-top: 0;
     color: var(--secondary-text-clr);
     }
@@ -637,7 +638,11 @@ header {
     padding: 25px 0px;
 }
 
-
+footer p{
+    margin-left: 60px;
+    align-items: center;
+    margin-top: 0;
+}
 }
 
 @media (max-width: 468px) {
@@ -672,6 +677,7 @@ header {
     }
 
     footer p{
+        align-items: center;
         margin-left: 60px;
         margin-top: 0;
         color: var(--secondary-text-clr);
@@ -861,13 +867,16 @@ header {
 }
 
 .forum-filter{
-    margin: 10px auto;
+    margin: 10px auto var(--base1);
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
 #categoryFilter, #categoryFilter option{
+    padding: 12px;
+    border-radius: 12px;
+    margin-left: 12px;
     color: black;
 }
 
@@ -915,4 +924,14 @@ header {
 
 .tab-content.active {
     display: block;
+}
+
+.HomePage ul{
+    margin-left: 30px;
+    margin-bottom: 12px;
+}
+
+.HomePage p{
+    margin-top: 0px;
+    margin-bottom: 12px;
 }
