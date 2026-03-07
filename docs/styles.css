@@ -773,13 +773,16 @@ footer p{
     list-style-type: none;
     justify-content: center;
     align-items: center;
+    margin-left: 0px;
 }
 
 .profile-container .profile-tabs{
-    min-width: 150px;
+    width: 100%;
     display: flex;
     gap: 24px;
-    margin: 10px;
+    margin: 10px 0px;
+    margin-top: 0px;
+    justify-content: center;
 }
 
 @media (max-width: 768px) {
@@ -806,15 +809,6 @@ footer p{
     font-family: var(--font-type);
 }
 
-.profile-tabs .tab-btn {
-    width: 120px;
-}
-.profile-container .profile-tabs {
-    min-width: 150px;
-    display: flex;
-    gap: 20px;
-}
-
 }
 
 @media (max-width: 468px) {
@@ -823,18 +817,20 @@ footer p{
     flex-wrap: wrap;
     gap: 15px;
 }
+
 .profile-container .profile-tabs{
-    display: flex;
-    flex-direction: column;
-    gap: 12px;
-    min-width: 0;
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+        align-items: center;
 }
 
-.profile-container .tab-btn {
+.profile-container .tab-btn{
     display: flex;
-    width: 80px;
     justify-content: center;
-    padding: 12px 120px
+    align-items: center;
+    padding: 12px 120px;
+    width: 80px;
 }
 }
 
@@ -932,7 +928,16 @@ footer p{
     margin-bottom: 12px;
 }
 
-.HomePage p{
-    margin-top: 0px;
-    margin-bottom: 12px;
+.recent-activity,
+.saved-items {
+    width: 600px;
 }
+
+@media (max-width: 768px) {
+.recent-activity,
+.saved-items {
+    width: revert;
+}
+}
+
+
